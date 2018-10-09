@@ -19,7 +19,7 @@ chmod 777 /sys/module/msm_power/parameters/gpu_freq_threshold;
 echo 624000 > /sys/module/msm_power/parameters/gpu_freq_threshold;
 chmod 444 /sys/module/msm_power/parameters/gpu_freq_threshold;
 
-#gpu power
+#Set GPu power to unlock max power level set by manufactrers for gpu to attain max frequency
 chmod 777 /sys/class/kgsl/kgsl-3d0/max_pwrlevel;
 echo 0 > /sys/class/kgsl/kgsl-3d0/max_pwrlevel;
 chmod 444 /sys/class/kgsl/kgsl-3d0/max_pwrlevel;
@@ -38,7 +38,7 @@ echo N > /sys/module/msm_thermal/parameters/enabled;
 chmod 444 /sys/module/msm_thermal/parameters/enabled;
 
 # Set core control state
-chmod 777 /sys/module/msm_thermal/core_control/enabled
+chmod 777 /sys/module/msm_thermal/core_control/enabled;
 echo 0 > /sys/module/msm_thermal/core_control/enabled;
 chmod 444 /sys/module/msm_thermal/core_control/enabled;
 chmod 777 /sys/module/msm_core/parameters/disabled;
