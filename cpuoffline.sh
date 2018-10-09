@@ -6,13 +6,13 @@ chmod 777 /sys/devices/system/cpu/cpu2/online;
 echo 0 > /sys/devices/system/cpu/cpu2/online;
 chmod 444 /sys/devices/system/cpu/cpu2/online;
 chmod 777 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor;
-echo performance > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor;
+echo interactive > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor;
 chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor;
 chmod 777 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq;
 echo 1036800 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq;
 chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
 chmod 777 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor;
-echo performance > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor;
+echo interactive > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor;
 chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor;
 chmod 777 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq;
 echo 1036800 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq;
